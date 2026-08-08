@@ -13,8 +13,8 @@
       --muted:#6b7280;
       --rule:rgba(0,0,0,.08);
       --accent:#111827;
-      --max: 760px;
-      --radius: 14px;
+      --max: 860px;
+      --radius: 16px;
       --shadow: 0 10px 30px rgba(0,0,0,.06);
     }
     @media (prefers-color-scheme: dark){
@@ -41,7 +41,7 @@
     }
     .wrap{
       max-width: var(--max);
-      margin: clamp(24px, 6vw, 64px) auto;
+      margin: clamp(20px, 6vw, 64px) auto;
       padding: 0 18px;
     }
     article{
@@ -49,16 +49,15 @@
       border: 1px solid var(--rule);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: clamp(22px, 5vw, 48px);
+      overflow: hidden;
     }
     header{
-      margin-bottom: 22px;
-      padding-bottom: 18px;
+      padding: clamp(18px, 4.5vw, 34px);
       border-bottom: 1px solid var(--rule);
     }
     h1{
       margin: 0 0 6px 0;
-      font-size: clamp(22px, 3.2vw, 30px);
+      font-size: clamp(22px, 3.2vw, 32px);
       line-height: 1.35;
       letter-spacing: .02em;
     }
@@ -67,28 +66,56 @@
       color: var(--muted);
       font-size: 13px;
     }
-    p{margin: 0 0 1.05em 0;}
+    .media{
+      padding: 0 clamp(18px, 4.5vw, 34px) clamp(10px, 2.8vw, 18px);
+    }
+    figure{margin: 0}
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      border: 1px solid var(--rule);
+      background: rgba(0,0,0,.02);
+    }
+    .audio{
+      margin-top: 14px;
+      width: 100%;
+    }
+    audio{width:100%;height:40px;}
+    main{
+      padding: clamp(18px, 4.5vw, 34px);
+      padding-top: 0;
+    }
+    .poem{white-space: pre-wrap; font-size: 1.05rem;}
     footer{
-      margin-top: 26px;
-      padding-top: 18px;
+      padding: 16px clamp(18px, 4.5vw, 34px) 22px;
       border-top: 1px solid var(--rule);
       color: var(--muted);
       font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
       font-size: 12px;
     }
-    .poem{white-space: pre-wrap;}
   </style>
 </head>
-
 <body>
   <div class="wrap">
     <article>
       <header>
         <h1>愛されたい君</h1>
-        <div class="meta">Reading mode</div>
+        
       </header>
 
-      <main class="poem">
+      <section class="media" aria-label="media">
+        <figure>
+          <img src='https://ohlucinda.github.io/medium/aisaretai.jpg'/>
+        </figure>
+        <div class="audio">
+          <audio controls src='https://ohlucinda.github.io/medium/aisaretai-kimi.mp3'></audio>
+        </div>
+      </section>
+
+      <main>
+        <div class="poem">
 愛されたいと言いながら
 差し出された愛のほとんどを
 落としていく君がいる
@@ -125,11 +152,10 @@
 一滴の優しさでも
 受け止められたら
 それが始まりだから
+        </div>
       </main>
 
-      <footer>
-        <div>（このHTMLは、原文の改行を保ったまま読みやすく表示するための1ページ版です。）</div>
-      </footer>
+
     </article>
   </div>
 </body>
