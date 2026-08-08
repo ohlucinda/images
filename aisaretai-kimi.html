@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>愛されたい君</title>
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    :root{
+      --bg:#fbfbf8;
+      --paper:#ffffff;
+      --text:#1f2328;
+      --muted:#6b7280;
+      --rule:rgba(0,0,0,.08);
+      --accent:#111827;
+      --max: 760px;
+      --radius: 14px;
+      --shadow: 0 10px 30px rgba(0,0,0,.06);
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b0f14;
+        --paper:#0f1620;
+        --text:#e6edf3;
+        --muted:#9aa4b2;
+        --rule:rgba(255,255,255,.10);
+        --accent:#e6edf3;
+        --shadow: 0 10px 30px rgba(0,0,0,.35);
+      }
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: ui-serif, "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Source Han Serif JP", serif;
+      line-height:1.95;
+      letter-spacing: .01em;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    .wrap{
+      max-width: var(--max);
+      margin: clamp(24px, 6vw, 64px) auto;
+      padding: 0 18px;
+    }
+    article{
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: clamp(22px, 5vw, 48px);
+    }
+    header{
+      margin-bottom: 22px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--rule);
+    }
+    h1{
+      margin: 0 0 6px 0;
+      font-size: clamp(22px, 3.2vw, 30px);
+      line-height: 1.35;
+      letter-spacing: .02em;
+    }
+    .meta{
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    p{margin: 0 0 1.05em 0;}
+    footer{
+      margin-top: 26px;
+      padding-top: 18px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      font-size: 12px;
+    }
+    .poem{white-space: pre-wrap;}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <article>
+      <header>
+        <h1>愛されたい君</h1>
+        <div class="meta">Reading mode</div>
+      </header>
+
+      <main class="poem">
+愛されたいと言いながら
+差し出された愛のほとんどを
+落としていく君がいる
+本当は捨てているつもりも
+拒んでいるつもりもないんだけど
+いくら優しさを注がれても
+器が穴だらけじゃ溜まらない
+愛されるために必要なのは
+可愛くなることでも
+努力でもない
+受け取る器を戻すだけ
+穴の開いたままの器に
+宇宙全部の愛を注いでも無駄だから
+
+傷ついた過去が残した穴を
+塞ごうともしないまま
+時間が過ぎていく君がいる
+痛みを忘れたつもりでも
+蓋をしたつもりでもないのに
+新しい愛に触れるたび
+全部こぼれてしまう
+愛されるために必要なのは
+強くなることでも
+許すことでもない
+ただ自分の手を器に戻すだけ
+穴を塞ぐのは誰かじゃなくて
+自分自身だから
+
+愛されたいと願うなら
+まずは自分の手を
+器にあててみて
+穴のひとつでも
+指で塞いでみて
+一滴の優しさでも
+受け止められたら
+それが始まりだから
+      </main>
+
+      <footer>
+        <div>（このHTMLは、原文の改行を保ったまま読みやすく表示するための1ページ版です。）</div>
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
