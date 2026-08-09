@@ -188,10 +188,6 @@ body {
   .album-link img {
     aspect-ratio: 1 / 1;
   }
-
-  .site-footer {
-  margin-top: -20px;
- }
   
  }
 
@@ -222,4 +218,10 @@ body {
 .site-footer a:hover,
 .site-footer a:focus-visible {
   text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .site-footer {
+    margin-top: -20px;
+  }
 }
