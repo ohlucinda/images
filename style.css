@@ -150,6 +150,11 @@ body {
 
 /* Responsive layout */
 @media (max-width: 640px) {
+  
+  :root {
+    --body-background-image: url("images/jemmedium-p.jpg");
+  }
+  
   .cover {
     height: 180px;
   }
