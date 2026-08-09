@@ -153,7 +153,7 @@ body {
 /* Responsive layout */
 @media (max-width: 640px) {
   .cover {
-    height: 220px;
+    height: 180px;
   }
 
   .page {
