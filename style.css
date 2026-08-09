@@ -188,7 +188,11 @@ body {
   .album-link img {
     aspect-ratio: 1 / 1;
   }
-}
+
+  .site-footer {
+  margin-top: 32px;
+ }
+ }
 
 /* Footer */
 .site-footer {
