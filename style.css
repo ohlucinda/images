@@ -32,8 +32,9 @@ body {
 
 /* Cover image */
 .cover {
-  width: 100%;
-  height: clamp(220px, 38vw, 360px);
+  width: min(100%, var(--page-width));
+  margin: 0 auto;
+  height: clamp(160px, 20vw, 260px);
   overflow: hidden;
   background: #eeeeee;
 }
