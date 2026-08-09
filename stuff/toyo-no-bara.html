@@ -17,6 +17,9 @@
       --max:860px;
       --radius:16px;
       --shadow:0 10px 30px rgba(0,0,0,.06);
+
+      /* プレーヤー → 歌詞の始まりの距離 */
+      --track-gap:5em;
     }
 
     html,body{
@@ -82,11 +85,19 @@
       padding:0 clamp(18px, 4.5vw, 34px);
     }
 
+    /*
+      曲と曲の間の距離は、
+      「プレーヤー → 歌詞の始まり」と同じにする。
+    */
     .track{
       margin-top:0;
-      margin-bottom:2em;
+      margin-bottom:var(--track-gap);
     }
 
+    /*
+      最初の曲だけ、カバー画像からの距離を確保。
+      ここは今までの状態を維持。
+    */
     .track:first-child{
       margin-top:5em;
     }
@@ -108,11 +119,21 @@
       display:block;
     }
 
+    /*
+      プレーヤー → 歌詞の始まり
+      と同じ距離を確保する。
+    */
     .poem{
-      margin-top:0;
+      margin-top:var(--track-gap);
       white-space:pre-wrap;
       font-size:1.05rem;
     }
+
+    /*
+      poem の末尾にある空白は
+      次の .track の margin-bottom で処理する。
+      そのため、余計な空白をここでは追加しない。
+    */
 
     footer{
       padding:16px clamp(18px, 4.5vw, 34px) 22px;
@@ -153,7 +174,7 @@
           <div class="audio">
             <audio
               controls
-              src="https://ohlucinda.github.io/medium/music/東洋のバラ.mp3"
+              src="https://ohlucinda.github.io/medium/music/東洋のバラ.mp3"
             ></audio>
           </div>
 
