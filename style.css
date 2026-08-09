@@ -53,23 +53,20 @@ body {
 }
 
 /* Body area with optional independent background image */
-.about,
-.releases {
+.page {
   position: relative;
   isolation: isolate;
 }
 
-.about::before {
+.page::before {
   content: "";
   position: absolute;
   z-index: -1;
-  inset: calc(var(--page-padding) * -1);
-  bottom: calc((var(--page-padding) + var(--section-gap)) * -1);
+  inset: 0;
   background-image: var(--body-background-image);
-  background-position: center;
-  background-size: cover;
+  background-position: center top;
+  background-size: 100% auto;
   background-repeat: no-repeat;
-  opacity: 1;
   pointer-events: none;
 }
 
