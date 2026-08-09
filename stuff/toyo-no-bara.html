@@ -4,31 +4,149 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>東洋のバラ - EP</title>
+  <meta name="color-scheme" content="light" />
   <style>
-    html, body { background:#fff; color:#000; }
-    body {
-      margin: 24px;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP",
-        "Yu Gothic", "Meiryo", sans-serif;
-      line-height: 1.8;
-      font-size: 16px;
-      max-width: 760px;
+    :root{
+      --bg:#ffffff;
+      --paper:#ffffff;
+      --text:#000000;
+      --muted:#6b7280;
+      --rule:rgba(0,0,0,.08);
+      --accent:#111827;
+      --max: 860px;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,.06);
     }
-    h1 { font-size: 20px; margin: 0 0 20px; font-weight: 600; }
-    h2 { font-size: 16px; margin: 28px 0 10px; font-weight: 600; }
-    audio { width: 100%; margin: 8px 0 14px; }
-    .lyrics { white-space: pre-wrap; margin: 0; }
+
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: ui-serif, "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Source Han Serif JP", serif;
+      line-height:1.95;
+      letter-spacing: .01em;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    .wrap{
+      max-width: var(--max);
+      margin: clamp(20px, 6vw, 64px) auto;
+      padding: 0 18px;
+    }
+
+    article{
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    header{
+      padding: clamp(18px, 4.5vw, 34px);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    h1{
+      margin: 0 0 6px 0;
+      font-size: clamp(22px, 3.2vw, 32px);
+      line-height: 1.35;
+      letter-spacing: .02em;
+    }
+
+    .meta{
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .media{
+      padding: 0 clamp(18px, 4.5vw, 34px) clamp(10px, 2.8vw, 18px);
+    }
+
+    figure{margin: 0}
+
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      border: 1px solid var(--rule);
+      background: rgba(0,0,0,.02);
+    }
+
+    .audio{
+      margin-top: 14px;
+      width: 100%;
+    }
+
+    audio{width:100%;height:40px;}
+
+    main{
+      padding: clamp(18px, 4.5vw, 34px);
+      padding-top: 0;
+    }
+
+    .track{
+      padding-top: 24px;
+      margin-top: 24px;
+      border-top: 1px solid var(--rule);
+    }
+
+    .track:first-child{
+      padding-top: 0;
+      margin-top: 0;
+      border-top: none;
+    }
+
+    h2{
+      margin: 0 0 10px 0;
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    .poem{
+      white-space: pre-wrap;
+      font-size: 1.05rem;
+    }
+
+    footer{
+      padding: 16px clamp(18px, 4.5vw, 34px) 22px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      font-size: 12px;
+    }
   </style>
 </head>
+
 <body>
- <h1>東洋のバラ - EP</h1>
+  <div class="wrap">
+    <article>
 
-<img src='https://ohlucinda.github.io/medium/images/toyonobara.jpg' alt="">
+      <header>
+        <h1>東洋のバラ - EP</h1>
+      </header>
 
-<h2>東洋のバラ</h2>
-<audio controls src='https://ohlucinda.github.io/medium/music/東洋のバラ.mp3'></audio>
-  <pre class="lyrics">朝がくるまで眠れず
+      <section class="media" aria-label="media">
+        <figure>
+          <img src="https://ohlucinda.github.io/medium/images/toyonobara.jpg"/>
+        </figure>
+      </section>
+
+      <main>
+
+        <section class="track">
+          <h2>東洋のバラ</h2>
+
+          <div class="audio">
+            <audio controls src="https://ohlucinda.github.io/medium/music/東洋のバラ.mp3"></audio>
+          </div>
+
+          <div class="poem">
+朝がくるまで眠れず
 眩しい光が気になる
 やるせない夜に浮かぶのは
 あなたのことばかり
@@ -54,11 +172,19 @@
 東洋のバラ
 東洋のバラ
 今夜あなたを待っている
-私を愛して</pre>
+私を愛して
+          </div>
+        </section>
 
-  <h2>最高のレッスン</h2>
-  <h2>最高のレッスン</h2>
-<audio controls src='https://ohlucinda.github.io/medium/music/最高のレッスン.mp3'></audio>
+        <section class="track">
+          <h2>最高のレッスン</h2>
+
+          <div class="audio">
+            <audio controls src="https://ohlucinda.github.io/medium/music/最高のレッスン.mp3"></audio>
+          </div>
+
+          <div class="poem">
+あなたが新しい誰かと
 婚約したニュースを読んだ私の顔を
 あなたが見ていたら
 どんなだったでしょう
@@ -91,12 +217,19 @@
 私を愛せなかったあなた
 私を愛したように
 彼女を愛さないあなた
-私が最高のレッスンをしてあげたの</pre>
+私が最高のレッスンをしてあげたの
+          </div>
+        </section>
 
-  <h2>見知らぬ彼女</h2>
-  <h2>見知らぬ彼女</h2>
-<audio controls src='https://ohlucinda.github.io/medium/music/見知らぬ彼女.mp3'></audio>
-  <pre class="lyrics">見知らぬ彼女は
+        <section class="track">
+          <h2>見知らぬ彼女</h2>
+
+          <div class="audio">
+            <audio controls src="https://ohlucinda.github.io/medium/music/見知らぬ彼女.mp3"></audio>
+          </div>
+
+          <div class="poem">
+見知らぬ彼女は
 たぶん昔、外国で
 しばらく恋をして
 まだ消えぬ傷を抱え
@@ -149,6 +282,17 @@
 そして私は
 赤いバラを手に持って
 棺の前で
-目を閉じた</pre>
+目を閉じた
+          </div>
+        </section>
+
+      </main>
+
+      <footer>
+        <div>© 2024 All rights reserved</div>
+      </footer>
+
+    </article>
+  </div>
 </body>
 </html>
