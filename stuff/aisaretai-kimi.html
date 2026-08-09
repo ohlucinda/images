@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>愛されたい君</title>
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    :root{
+      --bg:#ffffff;
+      --paper:#ffffff;
+      --text:#000000;
+      --muted:#6b7280;
+      --rule:rgba(0,0,0,.08);
+      --accent:#111827;
+      --max: 860px;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,.06);
+    }
+   
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: ui-serif, "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Source Han Serif JP", serif;
+      line-height:1.95;
+      letter-spacing: .01em;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    .wrap{
+      max-width: var(--max);
+      margin: clamp(20px, 6vw, 64px) auto;
+      padding: 0 18px;
+    }
+    article{
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    header{
+      padding: clamp(18px, 4.5vw, 34px);
+      border-bottom: 1px solid var(--rule);
+    }
+    h1{
+      margin: 0 0 6px 0;
+      font-size: clamp(22px, 3.2vw, 32px);
+      line-height: 1.35;
+      letter-spacing: .02em;
+    }
+    .meta{
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .media{
+      padding: 0 clamp(18px, 4.5vw, 34px) clamp(10px, 2.8vw, 18px);
+    }
+    figure{margin: 0}
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      border: 1px solid var(--rule);
+      background: rgba(0,0,0,.02);
+    }
+    .audio{
+      margin-top: 14px;
+      width: 100%;
+    }
+    audio{width:100%;height:40px;}
+    main{
+      padding: clamp(18px, 4.5vw, 34px);
+      padding-top: 0;
+    }
+    .poem{white-space: pre-wrap; font-size: 1.05rem;}
+    footer{
+      padding: 16px clamp(18px, 4.5vw, 34px) 22px;
+      border-top: 1px solid var(--rule);
+      color: var(--muted);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <article>
+      <header>
+        <h1>愛されたい君</h1>
+        
+      </header>
+
+      <section class="media" aria-label="media">
+        <figure>
+          <img src='https://ohlucinda.github.io/medium/images/aisaretai-kimi.jpg'/>
+        </figure>
+        <div class="audio">
+          <audio controls src='https://ohlucinda.github.io/medium/music/aisaretaikimi.mp3'></audio>
+        </div>
+      </section>
+
+      <main>
+        <div class="poem">
+愛されたいと言いながら
+差し出された愛のほとんどを
+落としていく君がいる
+本当は捨てているつもりも
+拒んでいるつもりもないんだけど
+いくら優しさを注がれても
+器が穴だらけじゃ溜まらない
+愛されるために必要なのは
+可愛くなることでも
+努力でもない
+受け取る器を戻すだけ
+穴の開いたままの器に
+宇宙全部の愛を注いでも無駄だから
+
+傷ついた過去が残した穴を
+塞ごうともしないまま
+時間が過ぎていく君がいる
+痛みを忘れたつもりでも
+蓋をしたつもりでもないのに
+新しい愛に触れるたび
+全部こぼれてしまう
+愛されるために必要なのは
+強くなることでも
+許すことでもない
+ただ自分の手を器に戻すだけ
+穴を塞ぐのは誰かじゃなくて
+自分自身だから
+
+愛されたいと願うなら
+まずは自分の手を
+器にあててみて
+穴のひとつでも
+指で塞いでみて
+一滴の優しさでも
+受け止められたら
+それが始まりだから
+        </div>
+      </main>
+
+
+    </article>
+  </div>
+</body>
+</html>
