@@ -33,7 +33,7 @@ body {
 /* Cover image */
 .cover {
   width: 100%;
-  height: clamp(220px, 38vw, 520px);
+  height: clamp(220px, 38vw, 360px);
   overflow: hidden;
   background: #eeeeee;
 }
