@@ -29,13 +29,11 @@
       -webkit-font-smoothing: antialiased;
       text-rendering: optimizeLegibility;
     }
-
     .wrap{
       max-width: var(--max);
       margin: clamp(20px, 6vw, 64px) auto;
       padding: 0 18px;
     }
-
     article{
       background: var(--paper);
       border: 1px solid var(--rule);
@@ -43,31 +41,25 @@
       box-shadow: var(--shadow);
       overflow: hidden;
     }
-
     header{
       padding: clamp(18px, 4.5vw, 34px);
       border-bottom: 1px solid var(--rule);
     }
-
     h1{
       margin: 0 0 6px 0;
       font-size: clamp(22px, 3.2vw, 32px);
       line-height: 1.35;
       letter-spacing: .02em;
     }
-
     .meta{
       font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
       color: var(--muted);
       font-size: 13px;
     }
-
     .media{
       padding: 0 clamp(18px, 4.5vw, 34px) clamp(10px, 2.8vw, 18px);
     }
-
     figure{margin: 0}
-
     img{
       width: 100%;
       height: auto;
@@ -76,42 +68,16 @@
       border: 1px solid var(--rule);
       background: rgba(0,0,0,.02);
     }
-
     .audio{
       margin-top: 14px;
       width: 100%;
     }
-
     audio{width:100%;height:40px;}
-
     main{
       padding: clamp(18px, 4.5vw, 34px);
       padding-top: 0;
     }
-
-    .track{
-      padding-top: 24px;
-      margin-top: 24px;
-      border-top: 1px solid var(--rule);
-    }
-
-    .track:first-child{
-      padding-top: 0;
-      margin-top: 0;
-      border-top: none;
-    }
-
-    h2{
-      margin: 0 0 10px 0;
-      font-size: 20px;
-      line-height: 1.5;
-    }
-
-    .poem{
-      white-space: pre-wrap;
-      font-size: 1.05rem;
-    }
-
+    .poem{white-space: pre-wrap; font-size: 1.05rem;}
     footer{
       padding: 16px clamp(18px, 4.5vw, 34px) 22px;
       border-top: 1px solid var(--rule);
@@ -121,7 +87,6 @@
     }
   </style>
 </head>
-
 <body>
   <div class="wrap">
     <article>
@@ -132,20 +97,18 @@
 
       <section class="media" aria-label="media">
         <figure>
-          <img src="https://ohlucinda.github.io/medium/images/toyonobara.jpg"/>
+          <img src='https://ohlucinda.github.io/medium/images/toyonobara.jpg'/>
         </figure>
+
+        <div class="audio">
+          <audio controls src='https://ohlucinda.github.io/medium/music/東洋のバラ.mp3'></audio>
+        </div>
       </section>
 
       <main>
+        <div class="poem">
+東洋のバラ
 
-        <section class="track">
-          <h2>東洋のバラ</h2>
-
-          <div class="audio">
-            <audio controls src="https://ohlucinda.github.io/medium/music/東洋のバラ.mp3"></audio>
-          </div>
-
-          <div class="poem">
 朝がくるまで眠れず
 眩しい光が気になる
 やるせない夜に浮かぶのは
@@ -173,17 +136,15 @@
 東洋のバラ
 今夜あなたを待っている
 私を愛して
-          </div>
-        </section>
+        </div>
 
-        <section class="track">
-          <h2>最高のレッスン</h2>
+        <div class="audio">
+          <audio controls src='https://ohlucinda.github.io/medium/music/最高のレッスン.mp3'></audio>
+        </div>
 
-          <div class="audio">
-            <audio controls src="https://ohlucinda.github.io/medium/music/最高のレッスン.mp3"></audio>
-          </div>
+        <div class="poem">
+最高のレッスン
 
-          <div class="poem">
 あなたが新しい誰かと
 婚約したニュースを読んだ私の顔を
 あなたが見ていたら
@@ -218,17 +179,15 @@
 私を愛したように
 彼女を愛さないあなた
 私が最高のレッスンをしてあげたの
-          </div>
-        </section>
+        </div>
 
-        <section class="track">
-          <h2>見知らぬ彼女</h2>
+        <div class="audio">
+          <audio controls src='https://ohlucinda.github.io/medium/music/見知らぬ彼女.mp3'></audio>
+        </div>
 
-          <div class="audio">
-            <audio controls src="https://ohlucinda.github.io/medium/music/見知らぬ彼女.mp3"></audio>
-          </div>
+        <div class="poem">
+見知らぬ彼女
 
-          <div class="poem">
 見知らぬ彼女は
 たぶん昔、外国で
 しばらく恋をして
@@ -283,9 +242,7 @@
 赤いバラを手に持って
 棺の前で
 目を閉じた
-          </div>
-        </section>
-
+        </div>
       </main>
 
       <footer>
