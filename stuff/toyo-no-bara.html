@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>東洋のバラ - EP</title>
   <meta name="color-scheme" content="light dark" />
+
   <style>
     :root{
       --bg:#ffffff;
@@ -13,108 +14,113 @@
       --muted:#6b7280;
       --rule:rgba(0,0,0,.08);
       --accent:#111827;
-      --max: 860px;
-      --radius: 16px;
-      --shadow: 0 10px 30px rgba(0,0,0,.06);
+      --max:860px;
+      --radius:16px;
+      --shadow:0 10px 30px rgba(0,0,0,.06);
     }
 
-    html,body{height:100%}
+    html,body{
+      height:100%;
+    }
 
     body{
       margin:0;
       background:var(--bg);
       color:var(--text);
-      font-family: ui-serif, "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Source Han Serif JP", serif;
+      font-family:ui-serif, "Hiragino Mincho ProN", "Yu Mincho",
+        "Noto Serif JP", "Source Han Serif JP", serif;
       line-height:1.95;
-      letter-spacing: .01em;
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
+      letter-spacing:.01em;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
     }
 
     .wrap{
-      max-width: var(--max);
-      margin: clamp(20px, 6vw, 64px) auto;
-      padding: 0 18px;
+      max-width:var(--max);
+      margin:clamp(20px, 6vw, 64px) auto;
+      padding:0 18px;
     }
 
     article{
-      background: var(--paper);
-      border: 1px solid var(--rule);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
+      background:var(--paper);
+      border:1px solid var(--rule);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
 
     header{
-      padding: clamp(18px, 4.5vw, 34px);
-      border-bottom: 1px solid var(--rule);
+      padding:clamp(18px, 4.5vw, 34px);
+      border-bottom:1px solid var(--rule);
     }
 
     h1{
-      margin: 0 0 6px 0;
-      font-size: clamp(22px, 3.2vw, 32px);
-      line-height: 1.35;
-      letter-spacing: .02em;
-    }
-
-    .meta{
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-      color: var(--muted);
-      font-size: 13px;
+      margin:0 0 6px 0;
+      font-size:clamp(22px, 3.2vw, 32px);
+      line-height:1.35;
+      letter-spacing:.02em;
     }
 
     .media{
-      padding: 0 clamp(18px, 4.5vw, 34px) clamp(10px, 2.8vw, 18px);
+      padding:0 clamp(18px, 4.5vw, 34px);
     }
 
-    figure{margin: 0}
+    figure{
+      margin:0;
+    }
 
     img{
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 12px;
-      border: 1px solid var(--rule);
-      background: rgba(0,0,0,.02);
+      width:100%;
+      height:auto;
+      display:block;
+      border-radius:12px;
+      border:1px solid var(--rule);
+      background:rgba(0,0,0,.02);
     }
 
-    .audio{
-      margin-top: 14px;
-      width: 100%;
+    main{
+      padding:0 clamp(18px, 4.5vw, 34px);
     }
 
-    .media .audio{
-      margin-top: 3.8em;
+    .track{
+      margin-top:0;
+      margin-bottom:3.8em;
     }
 
-    .poem + .audio{
-      margin-top: 3.8em;
+    .track:first-child{
+      margin-top:3.2em;
     }
 
     .track-title{
-      margin: 0 0 8px 0;
+      margin:0 0 14px 0;
+      font-size:1rem;
+      line-height:1.5;
+    }
+
+    .audio{
+      width:100%;
+      margin:0;
     }
 
     audio{
       width:100%;
       height:40px;
-    }
-
-    main{
-      padding: clamp(18px, 4.5vw, 34px);
-      padding-top: 0;
+      display:block;
     }
 
     .poem{
-      white-space: pre-wrap;
-      font-size: 1.05rem;
+      margin-top:1.5em;
+      white-space:pre-wrap;
+      font-size:1.05rem;
     }
 
     footer{
-      padding: 16px clamp(18px, 4.5vw, 34px) 22px;
-      color: var(--muted);
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
-      font-size: 12px;
+      padding:16px clamp(18px, 4.5vw, 34px) 22px;
+      color:var(--muted);
+      font-family:ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+        Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN",
+        "Yu Gothic", sans-serif;
+      font-size:12px;
     }
   </style>
 </head>
@@ -127,23 +133,31 @@
         <h1>東洋のバラ - EP</h1>
       </header>
 
-      <section class="media" aria-label="media">
+      <section class="media" aria-label="Cover">
         <figure>
-          <img src="https://ohlucinda.github.io/medium/images/toyonobara.jpg" alt=""/>
+          <img
+            src="https://ohlucinda.github.io/medium/images/toyonobara.jpg"
+            alt=""
+          />
         </figure>
-
-        <div class="audio">
-          <audio controls src="https://ohlucinda.github.io/medium/music/東洋のバラ.mp3"></audio>
-        </div>
       </section>
 
       <main>
 
-        <div class="track-title">
-          <strong>東洋のバラ</strong>
-        </div>
+        <div class="track">
 
-        <div class="poem">
+          <div class="track-title">
+            <strong>東洋のバラ</strong>
+          </div>
+
+          <div class="audio">
+            <audio
+              controls
+              src="https://ohlucinda.github.io/medium/music/東洋のバラ.mp3"
+            ></audio>
+          </div>
+
+          <div class="poem">
 
 朝がくるまで眠れず
 眩しい光が気になる
@@ -173,14 +187,25 @@
 今夜あなたを待っている
 私を愛して
 
+          </div>
+
         </div>
 
-        <div class="audio">
-          <strong>最高のレッスン</strong>
-          <audio controls src="https://ohlucinda.github.io/medium/music/最高のレッスン.mp3"></audio>
-        </div>
 
-        <div class="poem">
+        <div class="track">
+
+          <div class="track-title">
+            <strong>最高のレッスン</strong>
+          </div>
+
+          <div class="audio">
+            <audio
+              controls
+              src="https://ohlucinda.github.io/medium/music/最高のレッスン.mp3"
+            ></audio>
+          </div>
+
+          <div class="poem">
 
 あなたが新しい誰かと
 婚約したニュースを読んだ私の顔を
@@ -217,14 +242,25 @@
 彼女を愛さないあなた
 私が最高のレッスンをしてあげたの
 
+          </div>
+
         </div>
 
-        <div class="audio">
-          <strong>見知らぬ彼女</strong>
-          <audio controls src="https://ohlucinda.github.io/medium/music/見知らぬ彼女.mp3"></audio>
-        </div>
 
-        <div class="poem">
+        <div class="track">
+
+          <div class="track-title">
+            <strong>見知らぬ彼女</strong>
+          </div>
+
+          <div class="audio">
+            <audio
+              controls
+              src="https://ohlucinda.github.io/medium/music/見知らぬ彼女.mp3"
+            ></audio>
+          </div>
+
+          <div class="poem">
 
 見知らぬ彼女は
 たぶん昔、外国で
@@ -280,6 +316,8 @@
 赤いバラを手に持って
 棺の前で
 目を閉じた
+
+          </div>
 
         </div>
 
