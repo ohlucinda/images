@@ -53,6 +53,11 @@ body {
 
 /* Body area with optional independent background image */
 
+.body-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
 /* About */
 .about {
