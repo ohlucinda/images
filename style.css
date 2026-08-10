@@ -224,6 +224,6 @@ body {
 
 @media (max-width: 640px) {
   .site-footer {
-    margin-top: -20px;
+    margin-top: 0;
   }
 }
