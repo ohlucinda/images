@@ -55,7 +55,7 @@ body {
 
 .body-image {
   display: block;
-  width: 100%;
+  width: min(100%, 812px);
   height: auto;
 }
 
