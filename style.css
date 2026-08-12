@@ -229,7 +229,7 @@ body {
 }
 @media (min-width: 641px) and (max-width: 1024px) {
   .body-image {
-    margin-left: 20px;
+    margin-left: 0;
     margin-right: 0;
   }
 }
