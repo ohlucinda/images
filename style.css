@@ -227,7 +227,7 @@ body {
     margin-top: 0;
   }
 }
-@media (orientation: landscape) and (min-width: 641px) and (max-width: 1024px) {
+@media (orientation: landscape) and (min-width: 1025px) and (max-width: 1200px) {
   .body-image {
     margin-left: 10px;
     margin-right: 0;
