@@ -239,3 +239,8 @@ body {
     margin-left: 78px;
   }
 }
+@media (min-width: 641px) and (max-width: 1024px) and (orientation: portrait) {
+  .body-image {
+    width: calc(100vw - 48px);
+  }
+}
