@@ -227,6 +227,13 @@ body {
     margin-top: 0;
   }
 }
+@media (max-width: 1024px) {
+  .body-image {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 @media (min-width: 1024px) and (max-width: 1180px) and (orientation: landscape) {
   .body-image {
     margin-left: 78px;
