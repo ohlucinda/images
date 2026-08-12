@@ -241,6 +241,7 @@ body {
 }
 @media (min-width: 641px) and (max-width: 1024px) and (orientation: portrait) {
   .body-image {
-    width: calc(100% + var(--page-padding) - 24px);
+    width: calc(100% + 2 * (var(--page-padding) - 24px));
+    margin-left: calc(-1 * (var(--page-padding) - 24px));
   }
 }
