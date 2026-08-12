@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>愛されたい君</title>
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    :root{
+      --bg:#ffffff;
+      --paper:#ffffff;
+      --text:#000000;
+      --muted:#6b7280;
+      --rule:rgba(0,0,0,.08);
+      --accent:#111827;
+      --max: 860px;
+      --radius: 16px;
+      --shadow: 0 10px 30px rgba(0,0,0,.06);
+    }
+   
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family: ui-serif, "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", "Source Han Serif JP", serif;
+      line-height:1.95;
+      letter-spacing: .01em;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+    .wrap{
+      max-width: var(--max);
+      margin: clamp(20px, 6vw, 64px) auto;
+      padding: 0 18px;
+    }
+    article{
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    header{
+      padding: clamp(18px, 4.5vw, 34px);
+    }
+    h1{
+      margin: 0 0 6px 0;
+      font-size: clamp(22px, 3.2vw, 32px);
+      line-height: 1.35;
+      letter-spacing: .02em;
+    }
+    .meta{
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .media{
+      padding: 0 clamp(18px, 4.5vw, 34px) clamp(10px, 2.8vw, 18px);
+    }
+    figure{margin: 0}
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px;
+      border: 1px solid var(--rule);
+      background: rgba(0,0,0,.02);
+    }
+    .audio{
+      margin-top: 14px;
+      width: 100%;
+    }
+    audio{width:100%;height:40px;}
+    main{
+      padding: clamp(18px, 4.5vw, 34px);
+      padding-top: 0;
+    }
+    .poem{white-space: pre-wrap; font-size: 1.05rem;}
+    footer{
+      padding: 16px clamp(18px, 4.5vw, 34px) 22px;
+      color: var(--muted);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <article>
+      <header>
+        <h1>愛されたい君</h1>
+        
+      </header>
+
+      <section class="media" aria-label="media">
+        <figure>
+          <img src='https://ohlucinda.github.io/medium/images/someorange.jpg'/>
+        </figure>
+        <div class="audio">
+          <audio controls src='https://ohlucinda.github.io/medium/music/aisaretaikimi.mp3'></audio>
+        </div>
+      </section>
+
+      <main>
+        <div class="poem">
+窓辺に忍び寄る朝の光
+また一日
+稼ぐための変わらないルーティン
+コーヒーは冷め
+トーストはまた焦げちゃった
+でも頭の中で何かがざわめいている
+
+そう内側で何かが変わり始めている
+隠しきれない
+小さな声が聞こえるんだ
+
+ツヨポン
+ツヨポン
+一体どういうこと？
+ツヨポン
+ツヨポン
+僕の恐れを吹き飛ばして
+ツヨポン
+ツヨポン
+君はワイルドな存在
+ツヨポン
+ツヨポン
+僕の新しいお気に入りの太陽
+
+朝8時
+ボスからの電話
+もっと働け
+夜遅くまで残れって言うけれど
+僕の心は遥か彼方へ飛んでいく
+色彩が踊るあの場所へと
+
+そう何かが僕を呼び寄せている
+心配や迷いなんて入り込む余地はない
+
+ツヨポン
+ツヨポン
+一体どういうこと？
+ツヨポン
+ツヨポン
+僕の恐れを吹き飛ばして
+ツヨポン
+ツヨポン
+君はワイルドな存在
+ツヨポン
+ツヨポン
+僕の新しいお気に入りの太陽
+太陽！
+        </div>
+      </main>
+      <footer>
+        <div>© 2025 All rights reserved</div>
+      </footer>
+    </article>
+  </div>
+</body>
+</html>
